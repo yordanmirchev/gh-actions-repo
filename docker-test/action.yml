@@ -1,16 +1,10 @@
 name: 'Output docker info'
 description: 'Get some info form docker.'
 inputs:
-  bucket:
-    description: 'The S3 bucket name.'
-    required: true
-  bucket-region: 
-    description: 'The region of the S3 bucket.'
+  user-input:
+    description: 'Some user input.'
     required: false
-    default: 'us-east-1'
-  dist-folder:
-    description: 'The folder containing the deployable files.'
-    required: true
+    default: foo
 outputs:
   website-url:
     description: 'The URL of the deployed website.'
